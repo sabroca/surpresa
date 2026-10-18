@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff1f6">
+  <title>Uma surpresa pra você!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sparkle sparkle-a">✦</div>
+  <div class="sparkle sparkle-b">✧</div>
+  <div class="sparkle sparkle-c">✦</div>
+
+  <main class="page">
+    <div class="top-label"><span>♡</span> um presentinho especial <span>♡</span></div>
+
+    <section id="giftScene" class="gift-scene" aria-label="Caixa de presente fechada">
+      <div class="glow"></div>
+      <div id="gift" class="gift" role="button" tabindex="0" aria-label="Abrir a caixa de presente">
+        <div class="gift-lid">
+          <div class="lid-ribbon"></div>
+          <div class="bow">
+            <span class="bow-loop bow-left"></span>
+            <span class="bow-loop bow-right"></span>
+            <span class="bow-knot"></span>
+          </div>
+        </div>
+        <div class="gift-box">
+          <div class="box-ribbon"></div>
+          <div class="box-shine"></div>
+        </div>
+        <div class="gift-shadow"></div>
+      </div>
+      <div id="tapHint" class="tap-hint"><span class="tap-icon">☝</span> clique na caixa para uma surpresa</div>
+    </section>
+
+    <section id="surprise" class="surprise" hidden>
+      <div class="surprise-heading">
+        <span class="eyebrow">SURPRESAAAA!</span>
+        <h1>VAI DAR<br><span>PT!!!!!!!!!!!!!!!!!!!!!!!!!</span></h1>
+        <p>BORA LULA</p>
+      </div>
+      <div class="photo-frame">
+        <span class="photo-sticker sticker-one">✨</span>
+        <span class="photo-sticker sticker-two">💗</span>
+        <img src="assets/surpresa.jpeg" alt="Foto surpresa" class="surprise-photo">
+        <div class="photo-caption">gostosas com lula ♡</div>
+      </div>
+      <button id="replayButton" class="replay-button">↻ ver de novo</button>
+    </section>
+
+    <div id="confettiLayer" class="confetti-layer" aria-hidden="true"></div>
+    <div id="toast" class="toast" role="status"></div>
+
+    <footer>beijo da sabroca <span>♥</span></footer>
+  </main>
+
+  <!-- Coloque sua cópia autorizada da música em assets/vai-dar-pt.mp3 -->
+  <audio id="surpriseMusic" src="assets/VAI DAR PT ⭐️ - VITTAR HD.mp3" preload="auto" loop></audio>
+  <button id="musicButton" class="music-button" aria-label="Tocar música" hidden>♫ <span>música</span></button>
+  <script src="script.js"></script>
+</body>
+</html>
